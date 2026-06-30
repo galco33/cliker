@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cvdbd2y1gl3b5"]
+
+[ext_resource type="Script" uid="uid://c5cnktug5h4so" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=418732499]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_right = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="Panel" type="Panel" parent="." unique_id=555818967]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=1799423381]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 216.0
+offset_right = 583.0
+offset_bottom = 224.0
+text = "clik me"
+
+[node name="Button2" type="Button" parent="." unique_id=1398501354]
+layout_mode = 0
+offset_left = 159.0
+offset_top = 453.0
+offset_right = 310.0
+offset_bottom = 461.0
+text = "ajout 1"
+
+[node name="Button3" type="Button" parent="." unique_id=1487325411]
+layout_mode = 0
+offset_left = 765.0
+offset_top = 427.0
+offset_right = 876.0
+offset_bottom = 476.0
+text = "vitesse +"
+
+[node name="Button4" type="Button" parent="." unique_id=1337793257]
+visible = false
+layout_mode = 0
+offset_left = 411.0
+offset_top = 519.0
+offset_right = 670.0
+offset_bottom = 550.0
+text = "(+0.10 multi / 50 points cumulés)"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1033065004]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 113.0
+offset_right = 581.0
+offset_bottom = 153.0
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1685377758]
+layout_mode = 2
+text = "score:"
+
+[node name="Label2" type="Label" parent="HBoxContainer" unique_id=1406152093]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
