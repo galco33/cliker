@@ -18,52 +18,78 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 3.0
-offset_right = 3.0
-offset_bottom = 3.0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 5.0
+offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Button" type="Button" parent="." unique_id=1799423381]
 layout_mode = 0
 offset_left = 521.0
-offset_top = 216.0
-offset_right = 583.0
-offset_bottom = 224.0
+offset_top = 577.0
+offset_right = 584.0
+offset_bottom = 608.0
 text = "clik me"
 
 [node name="Button2" type="Button" parent="." unique_id=1398501354]
 layout_mode = 0
-offset_left = 159.0
-offset_top = 453.0
-offset_right = 310.0
-offset_bottom = 461.0
+offset_left = 917.0
+offset_top = 97.0
+offset_right = 1068.0
+offset_bottom = 128.0
 text = "ajout 1"
 
 [node name="Button3" type="Button" parent="." unique_id=1487325411]
 layout_mode = 0
-offset_left = 765.0
-offset_top = 427.0
-offset_right = 876.0
-offset_bottom = 476.0
+offset_left = 917.0
+offset_top = 153.0
+offset_right = 1028.0
+offset_bottom = 202.0
 text = "vitesse +"
 
 [node name="Button4" type="Button" parent="." unique_id=1337793257]
-visible = false
 layout_mode = 0
-offset_left = 411.0
-offset_top = 519.0
-offset_right = 670.0
-offset_bottom = 550.0
+offset_left = 868.0
+offset_top = 232.0
+offset_right = 1127.0
+offset_bottom = 263.0
 text = "(+0.10 multi / 50 points cumulés)"
+
+[node name="MarchantTomate" type="Button" parent="." unique_id=93985923]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 158.0
+offset_right = 227.0
+offset_bottom = 190.0
+text = "vendeur de tomate"
+
+[node name="ButtonTomate" type="Button" parent="." unique_id=642328561]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.007
+anchor_bottom = 0.006
+offset_left = 289.0
+offset_top = 158.0
+offset_right = 367.936
+offset_bottom = 185.112
+text = "tomate +1"
+
+[node name="TomateAuto" type="Button" parent="." unique_id=1403518961]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 205.0
+offset_right = 176.0
+offset_bottom = 236.0
+text = "tomate auto"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1033065004]
 layout_mode = 0
-offset_left = 516.0
-offset_top = 113.0
-offset_right = 581.0
-offset_bottom = 153.0
+offset_left = 531.0
+offset_top = 98.0
+offset_right = 597.0
+offset_bottom = 138.0
 
 [node name="Label" type="Label" parent="HBoxContainer" unique_id=1685377758]
 layout_mode = 2
@@ -74,7 +100,16 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "0"
 
+[node name="LabelTomate" type="Label" parent="HBoxContainer" unique_id=30931701]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+text = "tomate : 0"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="MarchantTomate" to="." method="_on_marchant_tomate_pressed"]
+[connection signal="pressed" from="ButtonTomate" to="." method="_on_button_tomate_pressed"]
+[connection signal="pressed" from="TomateAuto" to="." method="_on_tomate_auto_pressed"]
