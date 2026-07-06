@@ -10,150 +10,212 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -2.0
-offset_right = -2.0
+offset_left = 185.0
+offset_top = 607.0
+offset_right = -892.0
+offset_bottom = 72.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0fbet")
 
-[node name="Panel" type="Panel" parent="." unique_id=555818967]
+[node name="TabContainer" type="TabContainer" parent="." unique_id=605103084]
+layout_mode = 0
+offset_left = -180.0
+offset_top = -601.0
+offset_right = 968.0
+offset_bottom = 36.0
+current_tab = 0
+
+[node name="Compteurs" type="Control" parent="TabContainer" unique_id=1908007030]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Compteurs" unique_id=1206114909]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 5.0
-offset_top = 6.0
-offset_right = 5.0
-offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="." unique_id=1799423381]
-layout_mode = 0
-offset_left = 521.0
-offset_top = 577.0
-offset_right = 584.0
-offset_bottom = 608.0
-text = "clik me"
-
-[node name="Button2" type="Button" parent="." unique_id=1398501354]
-layout_mode = 0
-offset_left = 917.0
-offset_top = 97.0
-offset_right = 1068.0
-offset_bottom = 128.0
-text = "ajout 1"
-
-[node name="Button3" type="Button" parent="." unique_id=1487325411]
-layout_mode = 0
-offset_left = 917.0
-offset_top = 153.0
-offset_right = 1028.0
-offset_bottom = 202.0
-text = "vitesse +"
-
-[node name="Button4" type="Button" parent="." unique_id=1337793257]
-layout_mode = 0
-offset_left = 868.0
-offset_top = 232.0
-offset_right = 1127.0
-offset_bottom = 263.0
-text = "(+0.10 multi / 50 points cumulés)"
-
-[node name="MarchantTomate" type="Button" parent="." unique_id=93985923]
-layout_mode = 0
-offset_left = 70.0
-offset_top = 158.0
-offset_right = 226.0
-offset_bottom = 190.0
-text = "vendeur de tomate"
-
-[node name="ButtonTomate" type="Button" parent="." unique_id=642328561]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 0.007
-anchor_bottom = 0.006
-offset_left = 70.0
-offset_top = 204.0
-offset_right = 148.936
-offset_bottom = 231.112
-text = "tomate +1"
-
-[node name="TomateAuto" type="Button" parent="." unique_id=1403518961]
-layout_mode = 0
-offset_left = 70.0
-offset_top = 249.0
-offset_right = 174.0
-offset_bottom = 280.0
-text = "tomate auto"
-
-[node name="MarchantBois" type="Button" parent="." unique_id=1005260960]
-layout_mode = 0
-offset_left = 74.0
-offset_top = 299.0
-offset_right = 176.0
-offset_bottom = 322.0
-text = "vendeur bois"
-
-[node name="ButtonBois" type="Button" parent="." unique_id=1217360426]
-layout_mode = 0
-offset_left = 74.0
-offset_top = 338.0
-offset_right = 180.0
-offset_bottom = 364.0
-text = "bois"
-
-[node name="BoisAuto" type="Button" parent="." unique_id=790741902]
-layout_mode = 0
-offset_left = 71.0
-offset_top = 386.0
-offset_right = 197.0
-offset_bottom = 403.0
-text = "bois auto"
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1206114909]
-layout_mode = 0
-offset_left = 531.0
-offset_top = 98.0
-offset_right = 752.0
-offset_bottom = 202.0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1156093336]
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Compteurs/VBoxContainer" unique_id=1156093336]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=1685377758]
+[node name="Label" type="Label" parent="TabContainer/Compteurs/VBoxContainer/HBoxContainer" unique_id=1685377758]
 layout_mode = 2
 text = "score : "
 
-[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=1406152093]
+[node name="Label2" type="Label" parent="TabContainer/Compteurs/VBoxContainer/HBoxContainer" unique_id=1406152093]
 unique_name_in_owner = true
 layout_mode = 2
 text = "0"
 
-[node name="LabelTomate" type="Label" parent="VBoxContainer" unique_id=30931701]
+[node name="LabelTomate" type="Label" parent="TabContainer/Compteurs/VBoxContainer" unique_id=30931701]
 unique_name_in_owner = true
 layout_mode = 2
 text = "tomate : 0"
 
-[node name="LabelBois" type="Label" parent="VBoxContainer" unique_id=1025265956]
+[node name="LabelBois" type="Label" parent="TabContainer/Compteurs/VBoxContainer" unique_id=1025265956]
 unique_name_in_owner = true
 layout_mode = 2
 text = "bois : 0"
 
-[node name="MenuDev" type="Panel" parent="." unique_id=1301141343]
+[node name="Button" type="Button" parent="TabContainer/Compteurs" unique_id=1799423381]
 layout_mode = 0
-offset_left = 394.0
-offset_top = 217.0
-offset_right = 742.0
-offset_bottom = 461.0
+offset_left = 548.0
+offset_top = 474.0
+offset_right = 611.0
+offset_bottom = 510.0
+text = "clik me"
+
+[node name="Button2" type="Button" parent="TabContainer/Compteurs" unique_id=1398501354]
+layout_mode = 1
+offset_left = 385.0
+offset_top = 271.0
+offset_right = 447.0
+offset_bottom = 302.0
+text = "ajout 1"
+
+[node name="Button3" type="Button" parent="TabContainer/Compteurs" unique_id=1487325411]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47000003
+anchor_top = 0.31100002
+anchor_right = 0.47000003
+anchor_bottom = 0.31100002
+offset_left = 289.43994
+offset_top = -34.46602
+offset_right = 364.43994
+offset_bottom = -3.4660187
+grow_horizontal = 2
+grow_vertical = 2
+text = "vitesse +"
+
+[node name="Button4" type="Button" parent="TabContainer/Compteurs" unique_id=1337793257]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 208.0
+offset_top = 85.0
+offset_right = 467.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "bosster"
+
+[node name="Marché" type="Control" parent="TabContainer" unique_id=2096155154]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="ButtonTomate" type="Button" parent="TabContainer/Marché" unique_id=642328561]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -524.5
+offset_top = -169.0
+offset_right = -437.5
+offset_bottom = -138.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "tomate +1"
+
+[node name="MarchantTomate" type="Button" parent="TabContainer/Marché" unique_id=93985923]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -525.5
+offset_top = -222.0
+offset_right = -369.5
+offset_bottom = -191.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "vendeur de tomate"
+
+[node name="TomateAuto" type="Button" parent="TabContainer/Marché" unique_id=1403518961]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -525.5
+offset_top = -117.0
+offset_right = -421.5
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "tomate auto"
+
+[node name="MarchantBois" type="Button" parent="TabContainer/Marché" unique_id=1005260960]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -505.0
+offset_top = -214.0
+offset_right = -396.0
+offset_bottom = -183.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "vendeur bois"
+
+[node name="BoisAuto" type="Button" parent="TabContainer/Marché" unique_id=790741902]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 71.5
+offset_top = -111.0
+offset_right = 197.5
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "bois auto"
+
+[node name="ButtonBois" type="Button" parent="TabContainer/Marché" unique_id=1217360426]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 69.5
+offset_top = -165.0
+offset_right = 175.5
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "bois"
+
+[node name="MenuDev" type="Panel" parent="." unique_id=1301141343]
+visible = false
+layout_mode = 0
+offset_left = 192.0
+offset_top = -403.0
+offset_right = 540.0
+offset_bottom = -159.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_e2srm")
 
 [node name="InputPoints" type="LineEdit" parent="MenuDev" unique_id=471318233]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 21.0
-offset_right = 348.0
-offset_bottom = 187.0
+offset_left = -1.0
+offset_top = 25.0
+offset_right = 346.0
+offset_bottom = 191.0
 
 [node name="ButtonGive" type="Button" parent="MenuDev" unique_id=1461868105]
 layout_mode = 0
@@ -170,14 +232,14 @@ offset_top = 28.0
 offset_right = 346.0
 offset_bottom = 48.0
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
-[connection signal="pressed" from="MarchantTomate" to="." method="_on_marchant_tomate_pressed"]
-[connection signal="pressed" from="ButtonTomate" to="." method="_on_button_tomate_pressed"]
-[connection signal="pressed" from="TomateAuto" to="." method="_on_tomate_auto_pressed"]
-[connection signal="pressed" from="MarchantBois" to="." method="_on_marchant_bois_pressed"]
-[connection signal="pressed" from="ButtonBois" to="." method="_on_button_bois_pressed"]
-[connection signal="pressed" from="BoisAuto" to="." method="_on_bois_auto_pressed"]
+[connection signal="pressed" from="TabContainer/Compteurs/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TabContainer/Compteurs/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="TabContainer/Compteurs/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="TabContainer/Compteurs/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="TabContainer/Marché/ButtonTomate" to="." method="_on_button_tomate_pressed"]
+[connection signal="pressed" from="TabContainer/Marché/MarchantTomate" to="." method="_on_marchant_tomate_pressed"]
+[connection signal="pressed" from="TabContainer/Marché/TomateAuto" to="." method="_on_tomate_auto_pressed"]
+[connection signal="pressed" from="TabContainer/Marché/MarchantBois" to="." method="_on_marchant_bois_pressed"]
+[connection signal="pressed" from="TabContainer/Marché/BoisAuto" to="." method="_on_bois_auto_pressed"]
+[connection signal="pressed" from="TabContainer/Marché/ButtonBois" to="." method="_on_button_bois_pressed"]
 [connection signal="pressed" from="MenuDev/ButtonGive" to="." method="_on_button_give_pressed"]
